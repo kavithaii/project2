@@ -9,7 +9,9 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 python-dotenv==0.17.0
+redis==3.5.3
 requests==2.25.1
+rq==1.8.0
 SQLAlchemy==1.4.11
 urllib3==1.26.4
 Werkzeug==1.0.1
