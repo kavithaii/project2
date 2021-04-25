@@ -28,15 +28,15 @@ The user of this web app should be able to:
 
 - Create virtual environment 
       
-      ```   $ virtualenv venv
-            $ source venv/bin/activate
-      ```
+        $ virtualenv venv
+        $ source venv/bin/activate
+      
 - Install necessary libraries from **requirements.txt**
 
-       ```$ pip install -r requirements.txt```
+        $ pip install -r requirements.txt
 - Start the develoment server
   
-      ```$flask run```
+        $flask run
 - Browse to http://localhost:5000
 - You can enter url, same page displays the list of URLs and their word count
 
