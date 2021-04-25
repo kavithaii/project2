@@ -8,7 +8,7 @@ app.config["SECRET_KEY"] = "set-this-key"
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 
-from models import Websites
+from models import Wordcount
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -21,7 +21,8 @@ def index():
 			resp = requests.get(url)
 			result = len(resp.text.split())
 			print('result:', result)
-			w = Websites(url=url, count=str(result))
+			print('total number of urls', Wordcount.query.count())
+			w = Wordcount(url=url, count=str(result))
 			db.session.add(w)
 			db.session.commit()
 		except Exception as e:
