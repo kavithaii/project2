@@ -33,6 +33,10 @@ The user of this web app should be able to:
 - Install necessary libraries from **requirements.txt**
 
     ```$ pip install -r requirements.txt```
+- Install Redis on your local and start the Redis server
+- Start the worker on another terminal window of the same project
+
+    ```$python worker.py```
 - Start the develoment server
 
     ```$flask run```
